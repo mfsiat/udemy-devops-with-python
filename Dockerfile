@@ -1,6 +1,6 @@
 FROM python
-WORKDIR /app
 COPY . /app
+WORKDIR /app
 COPY req.txt .
 RUN pip install -r req.txt
-CMD ["python", "app"]
+CMD ["python", "app.py"]
